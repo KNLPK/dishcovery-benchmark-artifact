@@ -1,0 +1,4 @@
+.venv/
+__pycache__/
+# re-fetched Spoonacular payloads are not redistributed
+dataset/spoonacular/raw/

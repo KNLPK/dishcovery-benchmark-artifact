@@ -1,0 +1,463 @@
+{
+  "reports": [
+    {
+      "leadFormat": "protobuf",
+      "environment": {
+        "buildType": "release",
+        "executionEnvironment": "bare",
+        "standalone": true,
+        "hermesVersion": "for RN 0.79.2",
+        "reactNativeVersion": "0.79.2",
+        "device": "Infinix Infinix X6871"
+      },
+      "order": [
+        "protobuf",
+        "json",
+        "msgpack"
+      ],
+      "startedAt": "2026-10-15T03:07:33.157Z",
+      "payloadId": 9002022,
+      "tier": "high",
+      "iterations": 150,
+      "windowSize": 10,
+      "profiles": [
+        {
+          "format": "protobuf",
+          "windows": [
+            {
+              "fromIteration": 1,
+              "meanMs": 7.2379383000545205,
+              "sdMs": 2.1620613751155857,
+              "cv": 0.29871232462693137,
+              "percentVsFinal": 11.30034261613924
+            },
+            {
+              "fromIteration": 11,
+              "meanMs": 6.472176999878139,
+              "sdMs": 0.40584173856919414,
+              "cv": 0.06270559945700427,
+              "percentVsFinal": -0.47504030901909555
+            },
+            {
+              "fromIteration": 21,
+              "meanMs": 6.46024619974196,
+              "sdMs": 0.358785643697287,
+              "cv": 0.05553745671668332,
+              "percentVsFinal": -0.6585044514022118
+            },
+            {
+              "fromIteration": 31,
+              "meanMs": 6.452407600171864,
+              "sdMs": 0.3406784428164979,
+              "cv": 0.05279865500242478,
+              "percentVsFinal": -0.7790413752629421
+            },
+            {
+              "fromIteration": 41,
+              "meanMs": 6.451638399995863,
+              "sdMs": 0.3093113306088161,
+              "cv": 0.04794306677339735,
+              "percentVsFinal": -0.7908696390005144
+            },
+            {
+              "fromIteration": 51,
+              "meanMs": 6.348777000140399,
+              "sdMs": 0.1736444961762849,
+              "cv": 0.02735085768053357,
+              "percentVsFinal": -2.3726058422232774
+            },
+            {
+              "fromIteration": 61,
+              "meanMs": 6.4181771001778545,
+              "sdMs": 0.2614289216193609,
+              "cv": 0.040732581469607065,
+              "percentVsFinal": -1.3054159061464587
+            },
+            {
+              "fromIteration": 71,
+              "meanMs": 6.399084499944001,
+              "sdMs": 0.23552274956656938,
+              "cv": 0.03680569455968748,
+              "percentVsFinal": -1.5990095870216956
+            },
+            {
+              "fromIteration": 81,
+              "meanMs": 6.397792200092226,
+              "sdMs": 0.24505000961968662,
+              "cv": 0.03830227709117438,
+              "percentVsFinal": -1.618881739878296
+            },
+            {
+              "fromIteration": 91,
+              "meanMs": 6.386131000053138,
+              "sdMs": 0.2513913080723059,
+              "cv": 0.03936519749911396,
+              "percentVsFinal": -1.798200146012832
+            },
+            {
+              "fromIteration": 101,
+              "meanMs": 6.353099900111556,
+              "sdMs": 0.15846259611152722,
+              "cv": 0.024942563253057725,
+              "percentVsFinal": -2.3061310771812096
+            },
+            {
+              "fromIteration": 111,
+              "meanMs": 6.5473152998834845,
+              "sdMs": 0.3665539746938453,
+              "cv": 0.05598538605592562,
+              "percentVsFinal": 0.6803879617809266
+            },
+            {
+              "fromIteration": 121,
+              "meanMs": 6.862207800056785,
+              "sdMs": 1.0457471388162949,
+              "cv": 0.15239222846146416,
+              "percentVsFinal": 5.522601545762021
+            },
+            {
+              "fromIteration": 131,
+              "meanMs": 6.591723099909723,
+              "sdMs": 0.4187396212870171,
+              "cv": 0.06352506240633074,
+              "percentVsFinal": 1.363262442447905
+            },
+            {
+              "fromIteration": 141,
+              "meanMs": 6.503069199901074,
+              "sdMs": 0.42153051201474606,
+              "cv": 0.0648202408827448,
+              "percentVsFinal": 0
+            }
+          ],
+          "recommendedWarmup": 130,
+          "robustWarmup": 10,
+          "positionInOrder": 1
+        },
+        {
+          "format": "json",
+          "windows": [
+            {
+              "fromIteration": 1,
+              "meanMs": 11.208630500081927,
+              "sdMs": 0.6917254812812104,
+              "cv": 0.06171364836017695,
+              "percentVsFinal": 1.2792627782326427
+            },
+            {
+              "fromIteration": 11,
+              "meanMs": 11.225799900107086,
+              "sdMs": 0.5174347994042086,
+              "cv": 0.046093356732581046,
+              "percentVsFinal": 1.4344025320928435
+            },
+            {
+              "fromIteration": 21,
+              "meanMs": 11.08732300028205,
+              "sdMs": 0.3547690577632885,
+              "cv": 0.03199772007672759,
+              "percentVsFinal": 0.1831490157964181
+            },
+            {
+              "fromIteration": 31,
+              "meanMs": 11.012315400131047,
+              "sdMs": 0.38413220959983607,
+              "cv": 0.03488205664680335,
+              "percentVsFinal": -0.4946067944252154
+            },
+            {
+              "fromIteration": 41,
+              "meanMs": 11.000069200154394,
+              "sdMs": 0.3880317163102676,
+              "cv": 0.035275388658902375,
+              "percentVsFinal": -0.6052613570375864
+            },
+            {
+              "fromIteration": 51,
+              "meanMs": 11.07222320009023,
+              "sdMs": 0.5424251147325112,
+              "cv": 0.048989720034553756,
+              "percentVsFinal": 0.04670981106797836
+            },
+            {
+              "fromIteration": 61,
+              "meanMs": 11.012423099856823,
+              "sdMs": 0.43834111898900247,
+              "cv": 0.03980423881413542,
+              "percentVsFinal": -0.49363363817495665
+            },
+            {
+              "fromIteration": 71,
+              "meanMs": 10.971130699850619,
+              "sdMs": 0.27871306389341416,
+              "cv": 0.02540422418786872,
+              "percentVsFinal": -0.8667446824672733
+            },
+            {
+              "fromIteration": 81,
+              "meanMs": 11.044846300035715,
+              "sdMs": 0.4034371334262768,
+              "cv": 0.036527184033785264,
+              "percentVsFinal": -0.2006631623433894
+            },
+            {
+              "fromIteration": 91,
+              "meanMs": 10.972553999908268,
+              "sdMs": 0.2941465190458884,
+              "cv": 0.02680747973975316,
+              "percentVsFinal": -0.8538839872601431
+            },
+            {
+              "fromIteration": 101,
+              "meanMs": 10.975846200063824,
+              "sdMs": 0.3938554854291919,
+              "cv": 0.03588383786089328,
+              "percentVsFinal": -0.8241362313080955
+            },
+            {
+              "fromIteration": 111,
+              "meanMs": 10.779330600239337,
+              "sdMs": 0.20639949678428904,
+              "cv": 0.01914771004237557,
+              "percentVsFinal": -2.5998174864356263
+            },
+            {
+              "fromIteration": 121,
+              "meanMs": 10.826369000039994,
+              "sdMs": 0.3340958607292751,
+              "cv": 0.030859456270892014,
+              "percentVsFinal": -2.174786573511563
+            },
+            {
+              "fromIteration": 131,
+              "meanMs": 10.911007700208575,
+              "sdMs": 0.2635307921955172,
+              "cv": 0.0241527455058509,
+              "percentVsFinal": -1.4100057953853602
+            },
+            {
+              "fromIteration": 141,
+              "meanMs": 11.06705380016938,
+              "sdMs": 0.2928965680531335,
+              "cv": 0.026465631534984567,
+              "percentVsFinal": 0
+            }
+          ],
+          "recommendedWarmup": 60,
+          "robustWarmup": 20,
+          "positionInOrder": 2
+        },
+        {
+          "format": "msgpack",
+          "windows": [
+            {
+              "fromIteration": 1,
+              "meanMs": 4.660069299861789,
+              "sdMs": 0.7438876474842638,
+              "cv": 0.15963016848404518,
+              "percentVsFinal": 4.76792406110189
+            },
+            {
+              "fromIteration": 11,
+              "meanMs": 4.397461799904704,
+              "sdMs": 0.18468486719193133,
+              "cv": 0.04199806060758358,
+              "percentVsFinal": -1.1360316191700022
+            },
+            {
+              "fromIteration": 21,
+              "meanMs": 4.386907800100744,
+              "sdMs": 0.12839253360691275,
+              "cv": 0.029267205844618904,
+              "percentVsFinal": -1.3733072000363626
+            },
+            {
+              "fromIteration": 31,
+              "meanMs": 4.407353599835187,
+              "sdMs": 0.2271434741023031,
+              "cv": 0.05153738381935071,
+              "percentVsFinal": -0.9136436508247199
+            },
+            {
+              "fromIteration": 41,
+              "meanMs": 4.583461400028318,
+              "sdMs": 0.7675272271076026,
+              "cv": 0.1674558068936417,
+              "percentVsFinal": 3.045621211985112
+            },
+            {
+              "fromIteration": 51,
+              "meanMs": 4.470207599923015,
+              "sdMs": 0.4169574554393135,
+              "cv": 0.09327474085241462,
+              "percentVsFinal": 0.49944329797522236
+            },
+            {
+              "fromIteration": 61,
+              "meanMs": 4.416561500076204,
+              "sdMs": 0.2285506229089049,
+              "cv": 0.05174854304756346,
+              "percentVsFinal": -0.7066311514093867
+            },
+            {
+              "fromIteration": 71,
+              "meanMs": 4.4112075999379154,
+              "sdMs": 0.2592566907363871,
+              "cv": 0.05877227150679463,
+              "percentVsFinal": -0.8269978170157529
+            },
+            {
+              "fromIteration": 81,
+              "meanMs": 4.372176999971271,
+              "sdMs": 0.20054683602042206,
+              "cv": 0.045868874023567624,
+              "percentVsFinal": -1.7044858263648752
+            },
+            {
+              "fromIteration": 91,
+              "meanMs": 4.378792300075292,
+              "sdMs": 0.1404000508675162,
+              "cv": 0.03206364706202257,
+              "percentVsFinal": -1.5557603001242897
+            },
+            {
+              "fromIteration": 101,
+              "meanMs": 4.37909220000729,
+              "sdMs": 0.16228384006472327,
+              "cv": 0.03705878585165508,
+              "percentVsFinal": -1.5490179340177668
+            },
+            {
+              "fromIteration": 111,
+              "meanMs": 4.376215100102127,
+              "sdMs": 0.18284730900673224,
+              "cv": 0.04178206619744655,
+              "percentVsFinal": -1.6137010460026606
+            },
+            {
+              "fromIteration": 121,
+              "meanMs": 4.392338199913501,
+              "sdMs": 0.2228416337275788,
+              "cv": 0.050734170181150264,
+              "percentVsFinal": -1.251220664709241
+            },
+            {
+              "fromIteration": 131,
+              "meanMs": 4.440084700100124,
+              "sdMs": 0.21310990092928903,
+              "cv": 0.04799680981862427,
+              "percentVsFinal": -0.17778132639642835
+            },
+            {
+              "fromIteration": 141,
+              "meanMs": 4.447992399986833,
+              "sdMs": 0.22103255504128042,
+              "cv": 0.04969265573428919,
+              "percentVsFinal": 0
+            }
+          ],
+          "recommendedWarmup": 60,
+          "robustWarmup": 10,
+          "positionInOrder": 3
+        }
+      ],
+      "recommendedWarmup": 130,
+      "currentWarmup": 10,
+      "note": "Profiled in the order protobuf -> json -> msgpack. Only protobuf met a cold engine; the other two inherit warm-up it paid for, so their figures in THIS report are lower bounds. Run the profile once per leading format, each from a freshly launched app, and take the maximum across every format in every ordering. Bands: window mean within 5% of steady state, sd within 1.5x the steady-state sd. Settling is judged robustly when the profiles are combined; see combineProfileReports."
+    }
+  ],
+  "perFormat": [
+    {
+      "format": "json",
+      "observations": [
+        {
+          "leadFormat": "protobuf",
+          "positionInOrder": 2,
+          "strictWarmup": 60,
+          "robustWarmup": 20,
+          "outliers": [
+            {
+              "fromIteration": 51,
+              "meanMs": 11.07222320009023,
+              "sdMs": 0.5424251147325112,
+              "percentVsReference": 0.9148951197962623
+            }
+          ],
+          "firstWindowMeanMs": 11.208630500081927,
+          "firstWindowSdMs": 0.6917254812812104
+        }
+      ],
+      "maxRecommended": 20,
+      "maxStrict": 60,
+      "coldRecommended": null,
+      "coldStrict": null
+    },
+    {
+      "format": "msgpack",
+      "observations": [
+        {
+          "leadFormat": "protobuf",
+          "positionInOrder": 3,
+          "strictWarmup": 60,
+          "robustWarmup": 10,
+          "outliers": [
+            {
+              "fromIteration": 41,
+              "meanMs": 4.583461400028318,
+              "sdMs": 0.7675272271076026,
+              "percentVsReference": 4.508870071401523
+            },
+            {
+              "fromIteration": 51,
+              "meanMs": 4.470207599923015,
+              "sdMs": 0.4169574554393135,
+              "percentVsReference": 1.9265364053594172
+            }
+          ],
+          "firstWindowMeanMs": 4.660069299861789,
+          "firstWindowSdMs": 0.7438876474842638
+        }
+      ],
+      "maxRecommended": 10,
+      "maxStrict": 60,
+      "coldRecommended": null,
+      "coldStrict": null
+    },
+    {
+      "format": "protobuf",
+      "observations": [
+        {
+          "leadFormat": "protobuf",
+          "positionInOrder": 1,
+          "strictWarmup": 130,
+          "robustWarmup": 10,
+          "outliers": [
+            {
+              "fromIteration": 121,
+              "meanMs": 6.862207800056785,
+              "sdMs": 1.0457471388162949,
+              "percentVsReference": 6.373059253497863
+            }
+          ],
+          "firstWindowMeanMs": 7.2379383000545205,
+          "firstWindowSdMs": 2.1620613751155857
+        }
+      ],
+      "maxRecommended": 10,
+      "maxStrict": 130,
+      "coldRecommended": 10,
+      "coldStrict": 130
+    }
+  ],
+  "missingLeads": [
+    "json",
+    "msgpack"
+  ],
+  "coldRequirement": 20,
+  "coldRequirementStrict": 130,
+  "recommendedPrewarm": 200,
+  "prewarmHeadroom": 2,
+  "currentPrewarm": 200,
+  "currentWarmup": 10,
+  "note": "INCOMPLETE — no session has led with json or msgpack, so json and msgpack have not been measured from cold and the figure below is a lower bound. Settling is judged ROBUSTLY: against the median of the second half of each pass, tolerating isolated excursions shorter than 3 consecutive windows, which are interruptions rather than warm-up. Robust requirement 20; the strict rule (every later window in band, against the final window) gives 130. 4 outlier window(s) account for the difference and are listed per profile. The value taken is the MAXIMUM across every format in every ordering, applied identically to all three formats. It is an ENGINE figure and sizes prewarmDecodes, paid once per run; it is NOT warmupIterations, which is paid on all 750 cells with the engine already warm."
+}

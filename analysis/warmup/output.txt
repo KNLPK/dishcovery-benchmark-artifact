@@ -1,0 +1,20 @@
+
+2026-10-15 morning (used in the paper)
+  robust requirement : 20 decodes
+  strict requirement : 140 decodes
+  implied pre-warm   : 200 (configured 200)
+  evidence gaps      : none
+  format    cold robust/strict   max robust/strict
+  json                   10/140              20/140
+  msgpack                20/140              20/140
+  protobuf               10/130              10/130
+
+2026-10-12 (supplementary)
+  robust requirement : 40 decodes
+  strict requirement : 140 decodes
+  implied pre-warm   : 200 (configured 200)
+  evidence gaps      : none
+  format    cold robust/strict   max robust/strict
+  json                   10/110              40/110
+  msgpack                 20/10               40/30
+  protobuf               10/140              10/140

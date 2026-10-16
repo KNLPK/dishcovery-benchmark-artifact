@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite the paper below."
+title: "Dishcovery serialization benchmark: reproducibility package"
+type: dataset
+authors:
+  - given-names: Kevin
+    family-names: Nathanael
+    affiliation: BINUS University
+  - given-names: Michelle Daphne
+    family-names: Langitan
+    affiliation: BINUS University
+  - given-names: Anderies
+    affiliation: BINUS University
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - serialization
+  - JSON
+  - MessagePack
+  - Protocol Buffers
+  - React Native
+  - Hermes
+  - mobile performance
+preferred-citation:
+  type: article
+  title: "Comparative Analysis of JSON, MessagePack, and Protocol Buffers on Performance Efficiency and Resource Utilization in AI-Powered Mobile E-Applications"
+  authors:
+    - given-names: Kevin
+      family-names: Nathanael
+      affiliation: BINUS University
+    - given-names: Michelle Daphne
+      family-names: Langitan
+      affiliation: BINUS University
+    - given-names: Anderies
+      affiliation: BINUS University
+  year: 2026

@@ -1,0 +1,3 @@
+# Keep every file byte-for-byte as committed (no line-ending conversion),
+# so CHECKSUMS.sha256 holds on any checkout.
+* -text

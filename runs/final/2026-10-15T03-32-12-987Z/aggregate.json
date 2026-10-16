@@ -1,0 +1,529 @@
+{
+  "runId": "2026-10-15T03-32-12-987Z",
+  "startedAt": "2026-10-15T03:32:12.990Z",
+  "finishedAt": "2026-10-15T03:35:36.498Z",
+  "environment": {
+    "buildType": "release",
+    "executionEnvironment": "bare",
+    "standalone": true,
+    "device": {
+      "brand": "Infinix",
+      "model": "Infinix X6871",
+      "osRelease": "15",
+      "apiLevel": 35,
+      "os": "android"
+    },
+    "runtime": {
+      "isHermes": true,
+      "reactNativeVersion": "0.79.2",
+      "hermesVersion": "for RN 0.79.2",
+      "hermesProperties": {
+        "Bytecode Version": 96,
+        "Builtins Frozen": false,
+        "VM Experiments": 0,
+        "Build": "Release",
+        "GC": "hades (concurrent)",
+        "OSS Release Version": "for RN 0.79.2",
+        "Debugger Enabled": false,
+        "CommonJS Modules": "None"
+      },
+      "expoSdkVersion": "53.0.0",
+      "heapStatKey": "js_totalAllocatedBytes"
+    },
+    "libraries": {
+      "protobufjs": "8.8.0",
+      "msgpack": "3.1.3",
+      "declared": {
+        "@expo/vector-icons": "14.1.0",
+        "@msgpack/msgpack": "3.1.3",
+        "@react-native-community/datetimepicker": "8.6.0",
+        "@react-navigation/bottom-tabs": "7.15.10",
+        "@react-navigation/elements": "2.9.15",
+        "@react-navigation/native": "7.2.2",
+        "@react-navigation/native-stack": "7.14.12",
+        "axios": "1.15.2",
+        "expo": "53.0.27",
+        "expo-blur": "14.1.5",
+        "expo-constants": "17.1.8",
+        "expo-font": "13.3.2",
+        "expo-haptics": "14.1.4",
+        "expo-image": "2.1.7",
+        "expo-linking": "7.1.7",
+        "expo-router": "5.0.7",
+        "expo-sharing": "13.1.5",
+        "expo-splash-screen": "0.30.10",
+        "expo-status-bar": "2.2.3",
+        "expo-symbols": "0.4.5",
+        "expo-system-ui": "5.0.11",
+        "expo-web-browser": "14.1.6",
+        "protobufjs": "8.8.0",
+        "react": "19.0.0",
+        "react-dom": "19.0.0",
+        "react-native": "0.79.2",
+        "react-native-gesture-handler": "2.24.0",
+        "react-native-paper": "5.15.1",
+        "react-native-reanimated": "3.17.5",
+        "react-native-safe-area-context": "5.7.0",
+        "react-native-screens": "4.10.0",
+        "react-native-web": "0.20.0",
+        "react-native-webview": "13.13.5"
+      }
+    },
+    "dataset": {
+      "total": 250,
+      "thresholds": {
+        "lowMaxBytes": 7500,
+        "mediumMaxBytes": 14000,
+        "lowMaxDepth": 6,
+        "mediumMaxDepth": 8
+      },
+      "bySource": {
+        "spoonacular": {
+          "low": 100,
+          "medium": 0,
+          "high": 0
+        },
+        "generated": {
+          "low": 50,
+          "medium": 50,
+          "high": 50
+        }
+      }
+    }
+  },
+  "config": {
+    "prewarmDecodes": 200,
+    "warmupIterations": 10,
+    "measuredIterations": 30
+  },
+  "calibration": {
+    "offsetBytes": 208,
+    "before": {
+      "n": 30,
+      "mean": 208,
+      "sd": 0,
+      "min": 208,
+      "max": 208
+    },
+    "after": {
+      "n": 30,
+      "mean": 208,
+      "sd": 0,
+      "min": 208,
+      "max": 208
+    },
+    "stable": true,
+    "driftBytes": 0,
+    "driftQuanta": null,
+    "quantumBytes": null,
+    "repeats": 30,
+    "explanation": "The empty bracket allocated 208 B before and after the run - identical. The offset is a constant of this build and can be cited as one."
+  },
+  "determinism": {
+    "payloadId": 9001003,
+    "repeats": 30,
+    "perFormat": [
+      {
+        "format": "json",
+        "heap": {
+          "n": 30,
+          "mean": 344576,
+          "sd": 0,
+          "min": 344576,
+          "max": 344576
+        },
+        "ms": {
+          "n": 30,
+          "mean": 6.110735866737863,
+          "sd": 0.17015025119307253,
+          "min": 6.012076999992132,
+          "max": 6.6217689998447895
+        },
+        "constancy": {
+          "exact": true,
+          "cv": 0,
+          "rangeBytes": 0,
+          "rangeQuanta": 0,
+          "distinctValues": 1,
+          "constant": true
+        }
+      },
+      {
+        "format": "msgpack",
+        "heap": {
+          "n": 30,
+          "mean": 239264,
+          "sd": 0,
+          "min": 239264,
+          "max": 239264
+        },
+        "ms": {
+          "n": 30,
+          "mean": 2.602640966884792,
+          "sd": 0.07389250363462206,
+          "min": 2.557615000754595,
+          "max": 2.974845999851823
+        },
+        "constancy": {
+          "exact": true,
+          "cv": 0,
+          "rangeBytes": 0,
+          "rangeQuanta": 0,
+          "distinctValues": 1,
+          "constant": true
+        }
+      },
+      {
+        "format": "protobuf",
+        "heap": {
+          "n": 30,
+          "mean": 343088,
+          "sd": 0,
+          "min": 343088,
+          "max": 343088
+        },
+        "ms": {
+          "n": 30,
+          "mean": 3.212066666719814,
+          "sd": 0.1726650889385695,
+          "min": 3.1257690005004406,
+          "max": 3.7372309993952513
+        },
+        "constancy": {
+          "exact": true,
+          "cv": 0,
+          "rangeBytes": 0,
+          "rangeQuanta": 0,
+          "distinctValues": 1,
+          "constant": true
+        }
+      }
+    ],
+    "deterministic": true,
+    "exactlyIdentical": true,
+    "cvTolerance": 0.0001,
+    "quantumBytes": 48,
+    "note": "Heap delta is identical on every repeat for every format. Per-repeat variance is zero BY MEASUREMENT, not by assumption. All repeats are written to the CSV so this can be verified from the raw rows; the aggregate reports memory with n = payload count, because repeats of a deterministic computation are one observation, not many."
+  },
+  "warmupSufficiency": {
+    "configuredPrewarm": 200,
+    "configuredWarmup": 10,
+    "measuredColdRequirement": null,
+    "measuredPerCellRequirement": 10,
+    "prewarmSufficient": null,
+    "warmupSufficient": true,
+    "verdict": "unverified",
+    "coldProfileEnvironments": [],
+    "perCellProfileEnvironment": "release/bare (bytecode precompiled)",
+    "currentEnvironment": "release/bare (bytecode precompiled)",
+    "crossEnvironment": false,
+    "note": "UNVERIFIED in release/bare (bytecode precompiled): no cold profile on this device. The configured values may well be adequate, but nothing here demonstrates it, and an unverified configuration is not the same as a confirmed one. All profiles on this device were measured in release/bare (bytecode precompiled)."
+  },
+  "cooldown": {
+    "previousActivity": "per-cell-profile",
+    "previousId": "per-cell",
+    "previousEndedAt": "2026-10-15T03:21:53.369Z",
+    "gapSeconds": 620,
+    "minimumSeconds": 600,
+    "satisfied": true,
+    "overridden": false
+  },
+  "cells": [
+    {
+      "format": "json",
+      "tier": "low",
+      "payloads": 150,
+      "timeN": 4500,
+      "meanMs": 3.2845515684444044,
+      "sdMs": 0.49139518137894245,
+      "msPercentVsJson": null,
+      "memoryN": 150,
+      "meanHeapBytesCorrected": 208888,
+      "sdHeapBytesCorrected": 17557.94795611179,
+      "heapPercentVsJson": null,
+      "maxWithinPayloadHeapSd": 0,
+      "meanWireBytes": 5203.586666666667,
+      "sdWireBytes": 607.9256973613669,
+      "wirePercentVsJson": null,
+      "meanWithMaterializationMs": null,
+      "sdWithMaterializationMs": null
+    },
+    {
+      "format": "msgpack",
+      "tier": "low",
+      "payloads": 150,
+      "timeN": 4500,
+      "meanMs": 1.7497517897685368,
+      "sdMs": 0.29857226483737653,
+      "msPercentVsJson": -46.72783321233601,
+      "memoryN": 150,
+      "meanHeapBytesCorrected": 164967.46666666667,
+      "sdHeapBytesCorrected": 42871.161752342625,
+      "heapPercentVsJson": -21.02587670585832,
+      "maxWithinPayloadHeapSd": 0,
+      "meanWireBytes": 4648.72,
+      "sdWireBytes": 600.1873210945766,
+      "wirePercentVsJson": -10.663157975652693,
+      "meanWithMaterializationMs": null,
+      "sdWithMaterializationMs": null
+    },
+    {
+      "format": "protobuf",
+      "tier": "low",
+      "payloads": 150,
+      "timeN": 4500,
+      "meanMs": 1.3073029873172441,
+      "sdMs": 0.28092844562783387,
+      "msPercentVsJson": -60.198433178006226,
+      "memoryN": 150,
+      "meanHeapBytesCorrected": 147102.13333333333,
+      "sdHeapBytesCorrected": 43239.239990257964,
+      "heapPercentVsJson": -29.578466291345922,
+      "maxWithinPayloadHeapSd": 0,
+      "meanWireBytes": 3401.193333333333,
+      "sdWireBytes": 480.76982027731896,
+      "wirePercentVsJson": -34.63751924954327,
+      "meanWithMaterializationMs": 1.3747539164353575,
+      "sdWithMaterializationMs": 0.2851639588194399
+    },
+    {
+      "format": "json",
+      "tier": "medium",
+      "payloads": 50,
+      "timeN": 1500,
+      "meanMs": 6.348744626654933,
+      "sdMs": 0.4869638442298705,
+      "msPercentVsJson": null,
+      "memoryN": 50,
+      "meanHeapBytesCorrected": 351312.96,
+      "sdHeapBytesCorrected": 9543.965395356121,
+      "heapPercentVsJson": null,
+      "maxWithinPayloadHeapSd": 0,
+      "meanWireBytes": 9905.78,
+      "sdWireBytes": 399.06340808632075,
+      "wirePercentVsJson": null,
+      "meanWithMaterializationMs": null,
+      "sdWithMaterializationMs": null
+    },
+    {
+      "format": "msgpack",
+      "tier": "medium",
+      "payloads": 50,
+      "timeN": 1500,
+      "meanMs": 2.7317453393638136,
+      "sdMs": 0.17838434472333947,
+      "msPercentVsJson": -56.971881844251584,
+      "memoryN": 50,
+      "meanHeapBytesCorrected": 240973.44,
+      "sdHeapBytesCorrected": 5562.520043201679,
+      "heapPercentVsJson": -31.407756776180424,
+      "maxWithinPayloadHeapSd": 0,
+      "meanWireBytes": 8788.86,
+      "sdWireBytes": 433.3605752295256,
+      "wirePercentVsJson": -11.275437169006377,
+      "meanWithMaterializationMs": null,
+      "sdWithMaterializationMs": null
+    },
+    {
+      "format": "protobuf",
+      "tier": "medium",
+      "payloads": 50,
+      "timeN": 1500,
+      "meanMs": 3.3972103366442026,
+      "sdMs": 0.31127217221084846,
+      "msPercentVsJson": -46.49004588432869,
+      "memoryN": 50,
+      "meanHeapBytesCorrected": 367529.12,
+      "sdHeapBytesCorrected": 39386.124033642474,
+      "heapPercentVsJson": 4.615872981173246,
+      "maxWithinPayloadHeapSd": 0,
+      "meanWireBytes": 7100.38,
+      "sdWireBytes": 383.30708582129853,
+      "wirePercentVsJson": -28.320838944535414,
+      "meanWithMaterializationMs": 3.512713079360624,
+      "sdWithMaterializationMs": 0.3052775474661048
+    },
+    {
+      "format": "json",
+      "tier": "high",
+      "payloads": 50,
+      "timeN": 1500,
+      "meanMs": 10.851540973978738,
+      "sdMs": 0.7966322286196601,
+      "msPercentVsJson": null,
+      "memoryN": 50,
+      "meanHeapBytesCorrected": 545157.28,
+      "sdHeapBytesCorrected": 36906.73421601305,
+      "heapPercentVsJson": null,
+      "maxWithinPayloadHeapSd": 0,
+      "meanWireBytes": 16819.3,
+      "sdWireBytes": 1150.7008733810885,
+      "wirePercentVsJson": null,
+      "meanWithMaterializationMs": null,
+      "sdWithMaterializationMs": null
+    },
+    {
+      "format": "msgpack",
+      "tier": "high",
+      "payloads": 50,
+      "timeN": 1500,
+      "meanMs": 4.336670416671783,
+      "sdMs": 0.3054905534450897,
+      "msPercentVsJson": -60.036363249506906,
+      "memoryN": 50,
+      "meanHeapBytesCorrected": 385630.08,
+      "sdHeapBytesCorrected": 23015.703093571326,
+      "heapPercentVsJson": -29.262601060743425,
+      "maxWithinPayloadHeapSd": 0,
+      "meanWireBytes": 15028.9,
+      "sdWireBytes": 1100.1357105524085,
+      "wirePercentVsJson": -10.644913878698874,
+      "meanWithMaterializationMs": null,
+      "sdWithMaterializationMs": null
+    },
+    {
+      "format": "protobuf",
+      "tier": "high",
+      "payloads": 50,
+      "timeN": 1500,
+      "meanMs": 6.4088610640019175,
+      "sdMs": 0.7003386542886656,
+      "msPercentVsJson": -40.94054402623615,
+      "memoryN": 50,
+      "meanHeapBytesCorrected": 708136.48,
+      "sdHeapBytesCorrected": 88463.51140470637,
+      "heapPercentVsJson": 29.89581281937571,
+      "maxWithinPayloadHeapSd": 0,
+      "meanWireBytes": 12524.36,
+      "sdWireBytes": 1011.3569942388881,
+      "wirePercentVsJson": -25.535783296570003,
+      "meanWithMaterializationMs": 6.606294147347411,
+      "sdWithMaterializationMs": 0.7081104683846043
+    }
+  ],
+  "sentinels": [
+    {
+      "at": "start",
+      "progressPercent": 0,
+      "timestamp": 1792035200623,
+      "payloadId": 9001003,
+      "decodes": 150,
+      "perFormat": [
+        {
+          "format": "json",
+          "meanMs": 6.11974307992806,
+          "sd": 0.27215842859409023
+        },
+        {
+          "format": "msgpack",
+          "meanMs": 2.601769186692933,
+          "sd": 0.10037538292208766
+        },
+        {
+          "format": "protobuf",
+          "meanMs": 3.199011333386103,
+          "sd": 0.1743297265225704
+        }
+      ]
+    },
+    {
+      "at": "middle",
+      "progressPercent": 50,
+      "timestamp": 1792035242127,
+      "payloadId": 9001003,
+      "decodes": 150,
+      "perFormat": [
+        {
+          "format": "json",
+          "meanMs": 6.1412482067694265,
+          "sd": 0.2985775444463989
+        },
+        {
+          "format": "msgpack",
+          "meanMs": 2.6219687400137386,
+          "sd": 0.18260650118717178
+        },
+        {
+          "format": "protobuf",
+          "meanMs": 3.2071107533574104,
+          "sd": 0.19462970477299887
+        }
+      ]
+    },
+    {
+      "at": "end",
+      "progressPercent": 100,
+      "timestamp": 1792035336498,
+      "payloadId": 9001003,
+      "decodes": 150,
+      "perFormat": [
+        {
+          "format": "json",
+          "meanMs": 6.126511286621293,
+          "sd": 0.17280712595037234
+        },
+        {
+          "format": "msgpack",
+          "meanMs": 2.619201060011983,
+          "sd": 0.10180680570729182
+        },
+        {
+          "format": "protobuf",
+          "meanMs": 3.208714919947088,
+          "sd": 0.16572055230072189
+        }
+      ]
+    }
+  ],
+  "drift": [
+    {
+      "format": "json",
+      "startMeanMs": 6.11974307992806,
+      "middleMeanMs": 6.1412482067694265,
+      "endMeanMs": 6.126511286621293,
+      "driftPercent": 0.11059625550999402,
+      "standardErrorPercent": 0.43012718794828414,
+      "z": 0.2571245403889499,
+      "limitInStandardErrors": 11.6244686225256,
+      "sentinelDecodes": 150
+    },
+    {
+      "format": "msgpack",
+      "startMeanMs": 2.601769186692933,
+      "middleMeanMs": 2.6219687400137386,
+      "endMeanMs": 2.619201060011983,
+      "driftPercent": 0.6700007597986465,
+      "standardErrorPercent": 0.44866726497472315,
+      "z": 1.4933132236344293,
+      "limitInStandardErrors": 11.144115896847719,
+      "sentinelDecodes": 150
+    },
+    {
+      "format": "protobuf",
+      "startMeanMs": 3.199011333386103,
+      "middleMeanMs": 3.2071107533574104,
+      "endMeanMs": 3.208714919947088,
+      "driftPercent": 0.3033307966031366,
+      "standardErrorPercent": 0.6139116418978771,
+      "z": 0.4940952018199307,
+      "limitInStandardErrors": 8.144494514785142,
+      "sentinelDecodes": 150
+    }
+  ],
+  "acquisitionFailures": [],
+  "rowCount": 22500,
+  "notes": [
+    "Heap delta is identical on every repeat for every format. Per-repeat variance is zero BY MEASUREMENT, not by assumption. All repeats are written to the CSV so this can be verified from the raw rows; the aggregate reports memory with n = payload count, because repeats of a deterministic computation are one observation, not many.",
+    "Every heap reading has had the calibrated bracket offset of 208 B subtracted. The offset is identical for all three formats and therefore cancels out of every between-format comparison; it matters only for absolute allocation figures.",
+    "Acquisition is complete before measurement begins: the measurement phase makes no network calls, so no decode timing contains transport variance.",
+    "Time is aggregated over payloads x repeats. Memory is aggregated over PAYLOADS only.",
+    "ENGINE warm-up: every decoder was pre-warmed with 200 discarded decodes before anything was measured. This is paid once per run and is sized from the cold-start profile, which measures each format from a freshly launched app with that format profiled first, so no format inherits warm-up another paid for.",
+    "PER-CELL warm-up: each of the 750 cells discards a further 10 decodes. This is a SEPARATE quantity, sized from the per-cell profile, which measures the transient of a previously unseen payload with the engine already warm. The cold-start figure deliberately does NOT appear here: reusing it would double-count engine warm-up that the pre-warm has already paid, at 750 times the cost.",
+    "Both counts are identical for all three formats. Unequal warm-up would be unequal treatment.",
+    "WARM-UP PROVENANCE: UNVERIFIED in release/bare (bytecode precompiled): no cold profile on this device. The configured values may well be adequate, but nothing here demonstrates it, and an unverified configuration is not the same as a confirmed one. All profiles on this device were measured in release/bare (bytecode precompiled).",
+    "Both counts were derived from profiles run under Expo Go, where Hermes compiles bytecode lazily, and are verified in the environment of this run. A standalone APK ships bytecode precompiled and should therefore need no MORE warm-up than Expo Go measured, so a figure carried from Expo Go to an APK errs towards over-warming. That direction is safe: it costs time, not validity. The verdict above is the check that it did in fact hold here rather than an assumption that it would.",
+    "SENTINEL: 150 decodes per format at the start, middle and end. Drift json +0.1% ± 0.43%, msgpack +0.7% ± 0.45%, protobuf +0.3% ± 0.61%. The 5% refusal limit is 8.1 SE out at the widest of these.",
+    "COOLDOWN: started 620 s after the previous per-cell-profile (per-cell) ended, against a minimum of 600 s.",
+    "Warm-up was not verified on this build: at least one profile was missing. The configured values may be adequate; this run does not demonstrate it."
+  ]
+}
