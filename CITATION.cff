@@ -9,7 +9,7 @@ authors:
   - given-names: Michelle Daphne
     family-names: Langitan
     affiliation: BINUS University
-  - given-names: Anderies
+  - family-names: Anderies
     affiliation: BINUS University
 license:
   - MIT
@@ -32,6 +32,6 @@ preferred-citation:
     - given-names: Michelle Daphne
       family-names: Langitan
       affiliation: BINUS University
-    - given-names: Anderies
+    - family-names: Anderies
       affiliation: BINUS University
   year: 2026
