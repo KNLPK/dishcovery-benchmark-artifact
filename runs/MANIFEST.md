@@ -1,3 +1,5 @@
+Corrected 2026-10-16: timing details aligned with RUNS.md.
+
 # dishcovery-raw: manifest
 
 All files were exported from the Dishcovery app (release APK, build after the expo-image fix,
@@ -9,7 +11,7 @@ Their contents are unchanged.
 | runId | Status | CSV | Note |
 |---|---|---|---|
 | 2026-10-15T03-32-12-987Z | final | yes | began 620 s after the per-cell profile and about 6 min after excluded run 03-22; starting sentinel matches other runs within 0.5% |
-| 2026-10-15T07-24-40-380Z | final | yes | began 6 s after a short cold profile (msgpack-first); about 3.6 h after the previous run |
+| 2026-10-15T07-24-40-380Z | final | yes | began 6 s after a short cold profile (msgpack-first, ended 07:24:34; this profile exists only in the app's cooldown record, the exported msgpack-first file is the earlier 07:11 one); about 3.8 h after the previous run |
 | 2026-10-15T07-44-09-929Z | final | yes | began 6 s after a short cold profile (protobuf-first); 16 min after the previous run |
 | 2026-10-15T02-54-12-419Z | replication | aggregate only | clean; began 5 s after a cold profile |
 | 2026-10-15T03-08-03-075Z | replication | aggregate only | clean; began 30 s after a cold profile |

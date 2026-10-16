@@ -65,14 +65,18 @@ carry-over from the profile that preceded them.
 
 Notes on individual gaps:
 
-1. **2026-10-15T03-32-12-987Z started 377 s after the excluded run
-   2026-10-15T03-22-13-583Z finished**, which is less than the 10 minutes the
-   protocol sets between runs. The app's cooldown record for this run names the
-   per-cell profile (ended 03:21:53, 620 s earlier) as the previous activity and
-   does not mention the 03:22 run, so the app did not flag it. Its start
-   sentinel (JSON 6.120 ms) and drift (+0.11 / +0.67 / +0.30%) are in line with
-   the other clean runs. This is recorded here as it happened. It was not
-   adjusted.
+1. **Final run 2026-10-15T03-32-12-987Z started 377 s after the excluded run
+   2026-10-15T03-22-13-583Z finished. That is below the 10-minute rule.** The
+   run is kept as final. The evidence that the earlier run left no carry-over:
+   - Its start sentinel was JSON 6.120 ms, MessagePack 2.602 ms and Protocol
+     Buffers 3.199 ms. The other two final runs started at 6.140 / 2.619 /
+     3.208 ms and 6.116 / 2.622 / 3.207 ms.
+   - Its drift from start to end was +0.11 / +0.67 / +0.30%, well inside the
+     5% limit.
+
+   The app's cooldown record for this run names the per-cell profile (ended
+   03:21:53, 620 s earlier) as the previous activity and does not mention the
+   03:22 run, so the app did not flag the short gap.
 2. The cold profile that ended 6 s before 2026-10-15T07-24-40-380Z
    (msgpack-first, ended 07:24:34.782) is known only from the run's cooldown
    record. Its file was not exported. The msgpack-first profile in
@@ -91,8 +95,9 @@ Notes on individual gaps:
 
 All CSV and JSON files are byte-identical to the files exported from the app
 (see `CHECKSUMS.sha256`). `MANIFEST.md` is the note written when the files
-were exported. Where it differs from this file on a timing detail, the values
-here were computed from the files themselves.
+were exported. Two timing details in it were corrected on 2026-10-16 to match
+this file, and the correction is marked at its top. All timings here were
+computed from the files themselves.
 
 ## Warm-up profiles (`profiles/`)
 

@@ -81,36 +81,54 @@ cold-start profile (about 25 s, one payload) is not treated as a run, so a run
 that starts a few seconds after a profile is not in breach. The start
 sentinels show no carry-over in any run.
 
-One final run is an exception to the rule as written. Run
-2026-10-15T03-32-12-987Z started 377 s after the previous run (an excluded run)
-finished. The app's cooldown check did not flag this. RUNS.md records it as it
-happened.
+**One final run broke the rule.** Run 2026-10-15T03-32-12-987Z started 377 s
+after the excluded run 2026-10-15T03-22-13-583Z finished, below the 10-minute
+rule. It is kept as final because nothing shows carry-over from the earlier
+run:
 
-## Reproducing the tables
+- **Start sentinel:** JSON 6.120 ms, MessagePack 2.602 ms, Protocol Buffers
+  3.199 ms. The other two final runs started at 6.140 / 2.619 / 3.208 ms and
+  6.116 / 2.622 / 3.207 ms.
+- **Drift:** +0.11 / +0.67 / +0.30% from start to end, well inside the 5%
+  limit.
+
+The app's own cooldown check did not flag the short gap. See RUNS.md, note 1.
+
+## Check the numbers
 
 Python 3.12 or newer is required, because scipy 1.18.1 needs it. From the
 package root:
 
 ```
-python -m venv .venv && .venv/bin/pip install -r requirements.txt     # Windows: .venv\Scripts\pip
-.venv/bin/python analysis/analyze.py runs/final analysis/output        # Windows: .venv\Scripts\python
-diff --strip-trailing-cr analysis/output/report.md analysis/reference_output/report.md
+python -m venv .venv
+.venv/bin/pip install -r requirements.txt        # Windows: .venv\Scripts\pip install -r requirements.txt
+.venv/bin/python analysis/verify.py              # Windows: .venv\Scripts\python analysis\verify.py
 ```
 
-The script reads the three CSVs in `runs/final/*/`, checks their integrity and
-writes every table to `analysis/output/`. `analysis/reference_output/` is the
-output the paper was written from, kept unchanged so a fresh run can be
-compared against it.
+`verify.py` is the single "check my numbers" command. It runs
+`analysis/analyze.py` on the three CSVs in `runs/final/*/` into a temporary
+folder. Then it compares the result with `analysis/reference_output/`, the
+output the paper was written from, and prints PASS or FAIL:
 
-On Windows (Python 3.13.16) the regenerated `report.md` matches the reference
-line for line. Two kinds of byte difference are expected:
+- **Every CSV** must have the same columns, rows and text, and every number
+  must agree within a relative tolerance of 1e-9.
+- **`report.md`** must match line for line, after normalising line endings.
+
+The comparison is not byte-for-byte, because two harmless differences occur
+between platforms:
 
 - **Line endings.** Python writes CRLF on Windows, and the reference has LF.
-  Compare with `--strip-trailing-cr`.
 - **Floating-point noise in three CSVs.** `anova.csv`, `crossover.csv` and
   `paired_protobuf_vs_msgpack.csv` can differ in the 16th or 17th significant
   digit, for example `0.920138920779753` against `0.9201389207797526`. These
   digits are far below anything printed in the report or the paper.
+
+A real difference fails the check. A change of 1 in the 6th significant digit
+of a single CSV value, or one changed digit in `report.md`, both produce FAIL.
+
+To write the tables to `analysis/output/` yourself, run
+`python analysis/analyze.py runs/final analysis/output`. The committed
+`analysis/output/` was produced this way on Windows with Python 3.13.16.
 
 The engine warm-up figures can be checked with Node.js 22.6 or newer and no
 packages:
@@ -121,12 +139,13 @@ node --experimental-strip-types analysis/warmup/verify_warmup.ts
 
 ## Where each result comes from
 
-All paths are under `analysis/output/`. "Section" refers to the headings in
-`report.md`.
+Table numbers refer to the paper version of October 2026. All paths are under
+`analysis/output/`. "Section" refers to the headings in `report.md`.
 
 | Result in the paper | File | Section |
 |---|---|---|
-| Main results: size, decode time and heap allocation by tier and format, with % change vs JSON | `table_main.csv` | Main table |
+| **Table II**: change against JSON by format and tier, % (size, decode time, heap allocation) | `table_main.csv` (`*_pct_vs_json` columns) | Main table |
+| **Table III**: mean size, decode time and heap allocation by format and tier, mean (sd) | `table_main.csv` (`*_mean`, `*_sd` columns) | Main table |
 | Protocol Buffers materialisation overhead | `table_main.csv` (`materialisation_pct`) | Main table |
 | Payload sizes per payload | `payload_sizes.csv` (same as `dataset/payload_sizes.csv`) | not printed |
 | Between-run stability (CV of cell means, spread of % vs JSON) | `between_run_means.csv` | Between-run stability |
@@ -149,7 +168,7 @@ runs/replication/ clean runs not pooled (aggregate.json only)
 runs/excluded/    excluded runs (aggregate.json + REASON.md)
 runs/profiles/    cold-start profiles and per-payload profile screenshots
 runs/RUNS.md      every run, its timing, drift and status
-analysis/         analyze.py, its output, the reference output, warm-up check
+analysis/         analyze.py, verify.py, output, reference output, warm-up check
 CHECKSUMS.sha256  SHA-256 of every file in the package
 ```
 
